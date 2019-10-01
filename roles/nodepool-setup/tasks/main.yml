@@ -60,7 +60,7 @@
   package:
     name: "{{ item }}"
   with_items:
-    - centos-release-openstack-stein
+    - centos-release-openstack-queens
     - epel-release
   become: true
   when: ansible_distribution|lower != 'fedora'
