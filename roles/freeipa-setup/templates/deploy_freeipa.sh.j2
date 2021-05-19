@@ -69,7 +69,7 @@ ipa-server-install -U \
     --setup-dns \
 {% if custom_nameserver is defined -%}
 {% for dns in custom_nameserver %}
-    --forwarder={{ dns }} \
+    --forwarder=192.168.23.1 \
 {% endfor %}
 {% else %}
     --auto-forwarders \

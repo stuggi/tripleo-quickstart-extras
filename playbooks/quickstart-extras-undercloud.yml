@@ -2,7 +2,7 @@
 # Deploy the FreeIPA server
 - name: Deploy the FreeIPA server
   hosts: supplemental
-  gather_facts: false
+  gather_facts: true
   tags:
     - freeipa-setup
   roles:
